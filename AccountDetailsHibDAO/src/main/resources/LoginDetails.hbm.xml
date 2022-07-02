@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">
+
+<hibernate-mapping>
+	<class name="com.app.accounts.entity.LoginDetails" table="tbl_login_details">
+		<id name="loginId">
+			<column name="login_id" />
+			<generator class="increment"></generator>
+			<!-- <generator class="sequence-identity">
+				<param name="sequence">login_details_sequence</param>
+			</generator> -->
+		</id>
+
+		<property name="userName">
+			<column name="user_name" />
+		</property>
+		<property name="userPassword">
+			<column name="user_password" />
+		</property>
+
+		<property name="firstName">
+			<column name="first_name" />
+
+	</property>
+		<property name="lastName">
+			<column name="last_name" />
+		</property>
+		<property name="middleName">
+			<column name="middle_name" />
+		</property>
+		<property name="aadharNumber">
+			<column name="aadhar_number" />
+		</property>
+		
+		<property name="panNumber">
+			<column name="pan_number" />
+		</property>
+		<property name="mobileNumber">
+			<column name="mobile_number" />
+		</property>
+		<property name="emailAddress">
+			<column name="email_address" />
+		</property>
+		<property name="lastLoginDate">
+			<column name="last_login_date" />
+		</property>
+		<property name="createdDate">
+			<column name="created_date" />
+		</property>
+		<property name="updateDate">
+			<column name="update_date" />
+		</property>
+	</class>
+
+</hibernate-mapping>  
